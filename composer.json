@@ -12,7 +12,7 @@
     "autoload": {
         "psr-4": {"embargoedComposer\\": "src/"},
         "files": [
-            "embargoed-composer.php"
+            "src/embargoed-composer.php"
         ]
     },
     "require": {
