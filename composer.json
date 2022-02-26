@@ -1,6 +1,6 @@
 {
     "name": "gdelacc/embargoed-composer",
-    "description": "Limit Embargoed Composer is a simple library to blocks all request from Russia and displays a pro-Ukraine message instead. Based on https://github.com/rameerez/embargoed",
+    "description": "Embargoed Composer is a simple PHP Composer library to blocks all requests from Russia and displays a pro-Ukraine message instead. Based on https://github.com/rameerez/embargoed",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -17,5 +17,11 @@
     },
     "require": {
         "maxmind-db/reader": "~1.0"
-    }
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/gdelacc/embargoed-composer"
+        }
+    ]
 }
