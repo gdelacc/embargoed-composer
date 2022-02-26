@@ -24,7 +24,7 @@ Block all visits to your website from Rusian IPS
 ```php
 <?php
 
-use embargoedComposer
+use embargoedComposer\EmbargoedComposer;
 
 new EmbargoedComposer();
 ```

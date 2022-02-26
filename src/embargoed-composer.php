@@ -2,8 +2,6 @@
 
 namespace embargoedComposer;
 
-require '../vendor/autoload.php';
-
 use MaxMind\Db\Reader;
 
 class EmbargoedComposer {
@@ -17,7 +15,7 @@ class EmbargoedComposer {
             $ip = $_SERVER['REMOTE_ADDR'];
         }
 
-        $databaseFile = 'Geoacumen-Country.mmdb';
+        $databaseFile = __DIR__.'/Geoacumen-Country.mmdb';
 
         $reader = new Reader($databaseFile);
 
@@ -27,7 +25,7 @@ class EmbargoedComposer {
 
 
         if ($country == "RU"){
-            echo file_get_contents('maintenance.html');
+            echo file_get_contents( __DIR__.'/maintenance.html');
             exit();
         }
     }
